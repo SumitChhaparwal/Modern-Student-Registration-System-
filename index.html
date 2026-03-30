@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=edit_square"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+
+    <title>Registration System</title>
+  </head>
+  <body>
+    <div class="title">Student Registration System</div>
+    <div class="parag">Fill out fields below and then click on Add Record button to add record on the table. After clicked, you can clearly see record on the table which you can edit by clicking on specific cell where you want to edit record such as email_id cell, this record will automatically save through Js event when element will loose focus.</div>
+    <div class="main-container">
+      <div class="form-container">
+        <form action="#" id="stuForm" novalidate>
+          <!-- NoValidate: to off HTML auto suggestion for JS validation -->
+          <div class="regForm">
+            <div class="inputRow">
+              <label for="studentId"
+                >Student Id <br />
+                <input
+                  type="number"
+                  name="student_id"
+                  id="studentId"
+                  inputmode="numeric"
+                />
+                <p class="error" id="idError"></p>
+              </label>
+            </div>
+            <div class="inputRow">
+              <label for="studentName"
+                >Full Name<br />
+                <input type="text" name="student_name" id="studentName" />
+                <p class="error" id="nameError"></p>
+              </label>
+            </div>
+            <div class="inputRow">
+              <label for="emailId"
+                >Email Id<br />
+                <input type="email" name="email_address" id="emailId" />
+                <p class="error" id="emailError"></p>
+              </label>
+            </div>
+            <div class="inputRow">
+              <label for="contactNum"
+                >Contact Number<br />
+                <input type="tel" name="contact_number" id="contactNum" />
+                <p class="error" id="contactError"></p>
+              </label>
+            </div>
+            <button name="submit-btn" id="recordBtn" type="submit">
+              Add Record
+            </button>
+            <br />
+            <div id="finalResult"></div>
+          </div>
+        </form>
+      </div>
+      <div class="record-container">
+        <table>
+          <thead class="t-head">
+            <th>Student_Id</th>
+            <th>Full Name</th>
+            <th>Email_Id</th>
+            <th>Contact No.</th>
+            <th></th>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
