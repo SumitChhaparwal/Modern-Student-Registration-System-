@@ -88,7 +88,7 @@ function addRecord() {
   } else {
     console.log("browser doesn't support local storage...");
   }
-  //..
+  verticalScroll();
   displayTable();
   
 }
@@ -130,7 +130,7 @@ function deleteRecord() {
         //Storing updated array inside local_storage...
         localStorage.setItem("studentsRecord", JSON.stringify(studentR));
       }
-      //..
+      verticalScroll();
     }
   });
 }
