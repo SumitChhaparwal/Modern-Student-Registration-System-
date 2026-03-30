@@ -13,22 +13,22 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  font-size: 10px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  color: #f7f7f7;
   background: url("https://images.unsplash.com/photo-1646038572822-432f8ccf2522?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   height: 100vh;
   background-position: bottom;
   background-repeat: repeat;
   background-size: cover;
   height: 100vh;
-  color: #e9d7d7;
 }
 
 .title {
   margin-top: 10%;
 }
 
-.parag{
+.parag {
   text-align: center;
   margin: auto 6%;
 }
@@ -99,7 +99,6 @@ label input {
   scrollbar-color: #58f543;
   scroll-behavior: smooth;
 }
-
 
 .record-container table {
   width: 100%;
